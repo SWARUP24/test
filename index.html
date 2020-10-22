@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Swarup</title>
+
+</head>
+
+<body>
+
+<div class="p-3 mb-2 bg-primary text-white""></div>
+<input id="inputID" type="text" value="">
+<button id="buttonID" onclick="myFun()" >Click Me</button>
+<div id="show"></div>
+<script>
+
+  function myFun (){
+
+   var input = $('#inputID').val();
+
+    for (var i = 0; i < input.length; i++){
+   //   alert(i);
+
+      var newinput = $("<input type='text'>");
+      newinput.val(input.charAt(+i));
+      $('#show').append(newinput);
+
+
+    }
+
+  }
+
+</script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</body>
+
+</html>
